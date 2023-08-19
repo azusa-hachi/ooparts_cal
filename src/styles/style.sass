@@ -1,0 +1,35 @@
+
+thead tr:first-child th
+    position: sticky
+    top: 0
+    background-color: #FFF
+    z-index: 100
+.tooltip-content
+    font-size: 2em
+
+@media (min-width: $breakpoint-md-min)
+    .result-box
+        border-left: solid 1px #adadad
+    .fixed-footer
+        height: 70px
+    .developed-by
+        text-align: right
+    .big-box
+        overflow-y: scroll
+        height: calc(100vh - 120px) !important
+    .big-box::-webkit-scrollbar
+        display: none
+
+@media (max-width: $breakpoint-sm-max)
+    .result-box
+        border-top: solid 1px #adadad
+        margin-top: 5vw
+    .fixed-footer
+        position: absolute !important
+        bottom: 0
+    .developed-by
+        text-align: center
+
+@media (min-width: $breakpoint-lg-min)
+    .wrapper-box
+        max-width: 1200px !important
